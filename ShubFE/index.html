@@ -1,0 +1,236 @@
+<!-- check bottom for Nav offcanvas -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>StudentsHub | Citadel of Learning</title>
+		<link rel="stylesheet" href="./css/bootstrap.css" />
+		<link rel="stylesheet" href="./assets/bootstrap-icons/bootstrap-icons.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+		<script defer src="./js/bootstrap.bundle.js"></script>
+		<script defer src="./js/functionality.js"></script>
+		<link rel="stylesheet" href="./css/aos.css">
+		<script src="./js/aos.js"></script>
+	</head>
+	<body>
+		<header class="bg-light text-center tab-header py-3">
+			<img src="./assets/shublogo-edited.png" draggable="false" class="tab-header-img" alt="">
+		</header>
+		<!-- Not authenticated -->
+		<!-- <header class="bg-light text-center tab-header tab-header-auth px-3 py-3">
+			<img src="./assets/shublogo-edited.png" draggable="false" class="tab-header-img" alt="">
+			<form class="d-flex visually-hidnden">
+				<button class="btn btn-info my-2 my-sm-0" type="submit">
+					Login
+				</button>
+				<button class="btn btn-outline-info my-2 mx-2 my-sm-0" type="submit">
+					Sign-up
+				</button>
+			</form>
+		</header> -->
+		<header class="bg-light container px-3 mobile-header py-3">
+			<img src="./assets/shublogo-edited.png" draggable="false" class="mobile-header-img" alt="">
+			<div class="mobile-profile dropdown">
+				<img draggable="false" src="./images/tobi.jpeg" alt="" class="img-fluid profile-img" type="button" id="account-actions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<div class="dropdown-menu" aria-labelledby="account-actions">
+					<a class="dropdown-item" href="#">View Profile</a>
+					<a class="dropdown-item" href="#">Edit Profile</a>
+				</div>
+			</div>
+		</header>
+		<!-- mobile Not authenticated -->
+		<!-- <header class="bg-light text-center mobile-header tab-header-auth px-3 py-3">
+			<img src="./assets/shublogo-edited.png" draggable="false" class="mobile-header-img-no-auth" alt="">
+			<form class="d-flex visually-hidnden">
+				<button class="btn btn-info my-2 my-sm-0" type="submit">
+					Login
+				</button>
+				<button class="btn btn-outline-info my-2 mx-2 my-sm-0" type="submit">
+					Sign-up
+				</button>
+			</form>
+		</header> -->
+		<nav>
+			<div class="nav-mobile">
+				<div class="nav-mobile-cont shadow-lg mb-3 px-3 py-1 rounded-4 text-center">
+					<div class="nav-mobile-events" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-offcanvas" aria-controls="nav-offcanvas">
+						<i class="bi-grid-3x3-gap-fill gen-svg-mobile" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Toggle Navigation menu"></i>
+					</div>
+					<a href="#" class="nav-mobile-events border-start border-3 border-end">
+						<i class="bi-house-fill gen-svg-mobile mx-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Go to Homepage"></i>
+					</a>
+					<a href="#" class="nav-mobile-events mobile-need-fix">
+						<svg class="dummy courses gen-svg-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+							<path d="M6.012 18H21V4a2 2 0 0 0-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1zM8 6h9v2H8V6z">
+							</path>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<header class="">
+			<nav class="navbar navbar-expand-md navbar-light bg-light" data-aos="fade-up">
+				<div class="container-lg">
+					<a class="navbar-brand" href="#">
+						<img draggable="false" src="./assets/shublogo-edited.png" alt="" class="shub-nav-logo" />
+					</a>
+					<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-offcanvas" aria-controls="nav-offcanvas">
+						<span class="bi-text-right"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavId">
+						<ul class="navbar-nav me-auto mt-2 ms-5 mt-lg-0">
+							<li class="nav-item mx-3">
+								<a class="nav-link active lorem" href="#" aria-current="page">Home
+									<span class="visually-hidden">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item mx-3">
+								<a class="nav-link" href="#">Courses</a>
+							</li>
+							<li class="nav-item mx-3">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+							<li class="nav-item mx-3">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item mx-3">
+								<a class="nav-link" href="#">Download App</a>
+							</li>
+						</ul>
+						<form class="d-flex my-2 my-lg-0 visually-hidden">
+							<button class="btn btn-info my-2 mx-2 my-sm-0" type="submit">Login</button>
+							<button class="btn btn-outline-info my-2 mx-2 my-sm-0" type="submit">Sign-up</button>
+						</form>
+						<div class="dropdown">
+							<div class="user-profile user-profile-lg p-2 rounded-5" type="button" id="account-actions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+								<img draggable="false" src="./images/tobi.jpeg" alt="" class="img-fluid profile-img" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tobi Edunkayo">
+							</div>
+							<div class="dropdown-menu" aria-labelledby="account-actions">
+								<a class="dropdown-item" href="#">View Profile</a>
+								<a class="dropdown-item" href="#">Edit Profile</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="nav-offcanvas" aria-labelledby="lorem">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="lorem">
+						<img draggable="false" src="./assets/shublogo-edited.png" alt="" class="shub-nav-logo"/>
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="list-unstyled items-mobile">
+						<li class="nav-item">
+							<a class="nav-link active lorem" href="#" aria-current="page" >Home <span class="visually-hidden">(current)</span></a >
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Download App</a>
+						</li>
+						<li class="nav-item profile-special-case">
+							<a class="nav-link btn btn-outline-info my-2 p-2" href="#">View Profile</a>
+							<a class="nav-link btn btn-outline-info my-2 p-2" href="#">Edit Profile </a>
+						</li>
+					</ul>
+					<!-- not logged in -->
+					<form class="d-flex my-2 my-lg-0 visually-hidden">
+						<button class="btn btn-info my-2 my-sm-0" type="submit">
+							Login
+						</button>
+						<button class="btn btn-outline-info my-2 mx-2 my-sm-0" type="submit">
+							Sign-up
+						</button>
+					</form>
+					<!-- logged in -->
+					<div class="dropdown">
+						<div class="user-profile user-profile-mobile p-2 rounded-5" type="button" id="account-actions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img draggable="false" src="./images/tobi.jpeg" alt="" class="img-fluid profile-img">
+							<span class="mx-3 present-user h-100">
+								<div>Tobi Edunkayo</div>
+								<div>
+									<svg style="height:24px;width:24px" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="m16 12a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2z" fill="#000"/>
+									</svg>
+								</div>
+							</span>
+						</div>
+						<div class="dropdown-menu" aria-labelledby="account-actions">
+							<a class="dropdown-item" href="#">View Profile</a>
+							<a class="dropdown-item" href="#">Edit Profile</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="div ps-3">
+			<div class="priss rounded-5 py-3">
+				<div class="tab-nav-items tab-nav-event" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Home">
+					<a href="#" class="bi-house-fill gen-svg home-for-js"></a>
+					<a href="#" class="show-items visually-hidden">Home</a>
+				</div>
+				<div class="tab-nav-items tab-nav-event" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Courses">
+					<a href="#">
+						<svg class="dummy courses gen-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+							<path d="M6.012 18H21V4a2 2 0 0 0-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1zM8 6h9v2H8V6z">
+							</path>
+						</svg>
+					</a>
+					<a href="#" class="show-items visually-hidden">Courses</a>
+				</div>
+				<div class="tab-nav-items tab-nav-event" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Contact us">
+					<a href="#" class="bi-chat-left-dots-fill gen-svg"></a>
+					<a href="#" class="show-items visually-hidden">Contact</a>
+				</div>
+				<div class="tab-nav-items tab-nav-event" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="About us">
+					<a href="#" class="bi-info-square-fill gen-svg"></a>
+					<a href="#" class="show-items visually-hidden">About us</a>
+				</div>
+				<div class="tab-nav-items tab-nav-event" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Download app">
+					<a href="#">
+						<svg class="dummy gen-svg" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M2 12H4V17H20V12H22V17C22 18.11 21.11 19 20 19H4C2.9 19 2 18.11 2 17V12M12 15L17.55 9.54L16.13 8.13L13 11.25V2H11V11.25L7.88 8.13L6.46 9.55L12 15Z" />
+						</svg>
+					</a>
+					<a href="#" class="show-items visually-hidden">Download</a>
+				</div>
+				<div class="tab-nav-items" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Toggle Navigation menu">
+					<!-- expands nav pulls off canvas -->
+					<span class="bi-grid-3x3-gap-fill gen-svg toggle-tab"></span>
+					<span class="show-items visually-hidden">Collapse</span>
+				</div>
+				<div class="tab-nav-items">
+					<div class="dropdown">
+						<div class="user-profile tab-nav-items rounded-5" type="button" id="account-actions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img draggable="false" src="./images/tobi.jpeg" alt="" class="img-fluid profile-img">
+							<span class="show-items visually-hidden">Tobi</span>
+							<!-- ps only first name!! -->
+						</div>
+						<div class="dropdown-menu" aria-labelledby="account-actions">
+							<a class="dropdown-item" href="#">View Profile</a>
+							<a class="dropdown-item" href="#">Edit Profile</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<i class="bi-arrow-left-circle-fill gen-svg close-and-show"></i>
+		</div>
+		<main class="container-md">
+			<section class="">
+			</section>
+		</main>
+		<script>AOS.init();</script>
+	</body>
+</html>
